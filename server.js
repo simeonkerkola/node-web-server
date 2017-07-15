@@ -59,5 +59,5 @@ app.get('/bad', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log('Server is up on port:', port)
-}) // binds the app to a port we are listening
+  console.log('Server is up on port:', port) // binds the app to a port we are listening
+})

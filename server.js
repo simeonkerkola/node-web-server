@@ -48,8 +48,11 @@ app.get('/about', (req, res) => {
   })
 })
 
-app.get('/blog', (req, res) => {
-  res.send('My Blog')
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'My projects',
+    currentYear: new Date().getFullYear()
+  })
 })
 
 app.get('/bad', (req, res) => {

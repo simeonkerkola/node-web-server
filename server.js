@@ -55,6 +55,13 @@ app.get('/projects', (req, res) => {
   })
 })
 
+app.get('/chart', (req, res) => {
+  res.render('chart.hbs', {
+    pageTitle: 'Chart',
+    currentYear: new Date().getFullYear()
+  })
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'

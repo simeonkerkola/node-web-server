@@ -28,15 +28,15 @@ hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
 })
 
-hbs.registerHelper('screamIt', (text) => {
-  return text.toUpperCase()
-})
+// hbs.registerHelper('screamIt', (text) => {
+//   return text.toUpperCase()
+// }) // use: {{screamIt welcomeMessage}}
 
 // registering a handler for a http get -request
 // 1starg url = root of the app, 2nd return results
 app.get('/', (req, res) => { // request, response
   res.render('index.hbs', {
-    welcomeMessage: 'Welcome to my page!',
+    welcomeMessage: 'Developing it',
     pageTitle: 'Home',
   })
 })
@@ -50,7 +50,7 @@ app.get('/about', (req, res) => {
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
-    pageTitle: 'My projects',
+    pageTitle: 'Projects',
     currentYear: new Date().getFullYear()
   })
 })

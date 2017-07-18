@@ -8,6 +8,8 @@ var app = express()
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs') // set the view engine for express
 app.use(express.static(__dirname + '/public')) // folder for static pages
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/chart.js', express.static(__dirname + '/node_modules/chart.js/dist/'));
 
 app.use((req, res, next) => { // this middleware is not goin to move on until ve call next()
   var now = new Date().toString()

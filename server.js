@@ -39,7 +39,7 @@ hbs.registerHelper('getCurrentYear', () => {
 app.get('/', (req, res) => { // request, response
   res.render('index.hbs', {
     welcomeMessage: 'Developing it',
-    pageTitle: 'Home',
+    pageTitle: 'Simeon Kerkola, Developer',
   })
 })
 

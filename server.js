@@ -46,21 +46,18 @@ app.get('/', (req, res) => { // request, response
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
-    currentYear: new Date().getFullYear()
   })
 })
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Projects',
-    currentYear: new Date().getFullYear()
   })
 })
 
 app.get('/chart', (req, res) => {
   res.render('chart.hbs', {
     pageTitle: 'Chart',
-    currentYear: new Date().getFullYear()
   })
 })
 

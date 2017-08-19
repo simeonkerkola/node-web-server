@@ -38,7 +38,7 @@ hbs.registerHelper('getCurrentYear', () => {
 // 1starg url = root of the app, 2nd return results
 app.get('/', (req, res) => { // request, response
   res.render('index.hbs', {
-    welcomeMessage: 'Javascript.',
+    welcomeMessage: 'Keep it clean and keep it simple.',
     pageTitle: 'Simeon Kerkola, Developer',
   })
 })
